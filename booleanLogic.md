@@ -32,10 +32,17 @@
 
 ## Boolean rules for semplification
 
-|          ------          |
+|                          |
 | :----------------------: |
 |        A + AB = A        |
 |      A + ĀB = A + B      |
 | (A + B) (A + C) = A + BC |
 
+<br>
+
 ## De Morgan's Theorems
+
+|                           |
+| :-----------------------: |
+| Not(AB) = Not(A) + Not(B) |
+| Not(A + B) = Not(A)Not(B) |
