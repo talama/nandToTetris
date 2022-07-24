@@ -46,3 +46,13 @@
 | :-----------------------: |
 | Not(AB) = Not(A) + Not(B) |
 | Not(A + B) = Not(A)Not(B) |
+
+<br>
+<br>
+
+<img src="./Morganslaws.svg">
+
+<br>
+<br>
+
+We can use De Morgan's laws and boolean arithmetic and rule from semplifications to go from truth tables to logic circuits using Sum of Products for 1 or Product of sums for 0.
