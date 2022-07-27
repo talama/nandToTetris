@@ -17,4 +17,8 @@ CHIP DMux8Way {
 
     PARTS:
     // Put your code here:
+    /*Decide to which DMux4Way IN should go based on the value of sel[2] */
+    DMux(in = in, sel = sel[2], a = dmux1, b = dmux2);
+    DMux4Way(in = dmux1, sel[0] = sel[0], sel[1] = sel[1], a = a, b = b, c = c, d = d);
+    DMux4Way(in = dmux2, sel[0] = sel[0], sel[1] = sel[1], a = e, b = f, c = g, d = h);
 }
