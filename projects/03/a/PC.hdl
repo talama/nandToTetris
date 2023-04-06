@@ -17,4 +17,12 @@ CHIP PC {
 
     PARTS:
     // Put your code here:
+    /** Switch between out[t] and out[t]+1 */
+    Mux16(a = feedback, b = outPlusOne, sel = inc, out = increment);
+    Inc16(in = feedback, out = outPlusOne);
+    /** Switch between in[t] and the output from the previous switch (out[t+1]) */
+    Mux16(a = increment, b = in, sel = load, out = loaded);
+    /** Switch between 0 and the output from the previous switch */
+    Mux16(a = loaded, b = false, sel = reset, out = isReset);
+    Register(in = isReset, load = true, out = feedback, out = out);
 }
