@@ -46,6 +46,8 @@
 | :-----------------------: |
 | Not(AB) = Not(A) + Not(B) |
 | Not(A + B) = Not(A)Not(B) |
+| AB = (A Nand B) Nand (A Nand B) |
+| A + B = Not(A) Nand Not(B) |
 
 <br>
 <br>
